@@ -1,6 +1,8 @@
 package com.automation.VueJS.suite;
 
 
+import com.automation.config.BrowserLib;
+import com.automation.svc.MasterthoughtReportsSvc;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -16,5 +18,14 @@ import org.junit.runner.RunWith;
         strict = true,
         tags = "@p1_test")
 public class RunWIPCukes {
+    @BeforeClass
+    public static void launchDriver() {
+        BrowserLib.launchDriver();
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        BrowserLib.quitDriver();
+        MasterthoughtReportsSvc.generateReport();
 
 }
