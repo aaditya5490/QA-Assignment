@@ -1,0 +1,120 @@
+2022-01-15 01:30:46  [BrowserLib] (main:) ************Launching Chrome Browser**********
+2022-01-15 01:30:46  [WebDriverManager] (main:) Please answer the following questionnaire based on your experience with WebDriverManager. Thanks a lot!
+2022-01-15 01:30:46  [WebDriverManager] (main:) ====> http://tiny.cc/wdm-survey <====
+2022-01-15 01:30:46  [WebDriverManager] (main:) Using chromedriver 97.0.4692.71 (since Chrome 97 is installed in your machine)
+2022-01-15 01:30:46  [WebDriverManager] (main:) Exporting webdriver.chrome.driver as /Users/aseshadr/.m2/repository/webdriver/chromedriver/mac64/97.0.4692.71/chromedriver
+2022-01-15 01:30:49  [BrowserLib] (main:) -------Execution Started-------
+2022-01-15 01:30:49  [DefaultTestContextBootstrapper] (main:) Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-15 01:30:49  [DefaultTestContextBootstrapper] (main:) Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5ac86ba5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6c67e137, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c9399a4, org.springframework.test.context.event.EventPublishingTestExecutionListener@191ae03f]
+2022-01-15 01:30:49  [ScenarioUtils] (main:) Set Scenario  Newly Added Task appears in Active Tab
+2022-01-15 01:30:49  [Hooks] (main:) -------Session Started-------
+2022-01-15 01:30:49  [ToDoStepDef] (main:) Step Definition ----- User is Navigated to ToDo Page
+2022-01-15 01:30:49  [LocatorActions] (main:) ** Navigating to https://todomvc.com/examples/vue/***
+2022-01-15 01:30:50  [ToDoStepDef] (main:) Step Definition ----- User enters the taskLearn Vue JS Basicsin ToDo Box
+2022-01-15 01:30:50  [ToDoStepDef] (main:) Step Definition ----- Added TaskLearn Vue JS Basicsappears inAllTab
+2022-01-15 01:30:51  [LocatorActions] (main:) Capturing screenshot for Newly Added Task appears in Active Tab
+2022-01-15 01:30:51  [LocatorActions] (main:) Captured screenshot name Newly_Added_Task_appears_in_Active_Tab 
+2022-01-15 01:30:51  [ToDoStepDef] (main:) Step Definition ----- Added TaskLearn Vue JS Basicsappears inActiveTab
+2022-01-15 01:30:51  [LocatorActions] (main:) Capturing screenshot for Newly Added Task appears in Active Tab
+2022-01-15 01:30:51  [LocatorActions] (main:) Captured screenshot name Newly_Added_Task_appears_in_Active_Tab 
+2022-01-15 01:30:51  [LocatorActions] (main:) Capturing screenshot for Newly Added Task appears in Active Tab
+2022-01-15 01:30:51  [LocatorActions] (main:) Captured screenshot name Newly_Added_Task_appears_in_Active_Tab 
+2022-01-15 01:30:54  [LocatorActions] (main:) Capturing screenshot for Newly Added Task appears in Active Tab
+2022-01-15 01:30:54  [LocatorActions] (main:) Captured screenshot name Newly_Added_Task_appears_in_Active_Tab 
+2022-01-15 01:30:54  [LocatorActions] (main:) Capturing screenshot for Newly Added Task appears in Active Tab
+2022-01-15 01:30:54  [LocatorActions] (main:) Captured screenshot name Newly_Added_Task_appears_in_Active_Tab 
+2022-01-15 01:30:54  [Hooks] (main:) -------Screen shot added-------
+2022-01-15 01:30:54  [DefaultTestContextBootstrapper] (main:) Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-15 01:30:54  [DefaultTestContextBootstrapper] (main:) Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d74bac4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5ff90645, org.springframework.test.context.support.DirtiesContextTestExecutionListener@387bf2d9, org.springframework.test.context.event.EventPublishingTestExecutionListener@74aa9c72]
+2022-01-15 01:30:54  [ScenarioUtils] (main:) Set Scenario  When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:54  [Hooks] (main:) -------Session Started-------
+2022-01-15 01:30:54  [ToDoStepDef] (main:) Step Definition ----- User is Navigated to ToDo Page
+2022-01-15 01:30:54  [LocatorActions] (main:) ** Navigating to https://todomvc.com/examples/vue/***
+2022-01-15 01:30:54  [ToDoStepDef] (main:) Step Definition ----- User enters the taskBoot strap Vue JS applicationin ToDo Box
+2022-01-15 01:30:54  [ToDoStepDef] (main:) Step Definition ----- Added TaskBoot strap Vue JS applicationappears inActiveTab
+2022-01-15 01:30:55  [LocatorActions] (main:) Capturing screenshot for When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:55  [LocatorActions] (main:) Captured screenshot name When_Task_Marked_completed_moves_to_Completed_Tab 
+2022-01-15 01:30:55  [LocatorActions] (main:) Selecting option [[ChromeDriver: chrome on MAC (1db11034997d68ce993bf527ea322749)] -> xpath: //ul[@class='todo-list']/li//label[text()='Boot strap Vue JS application']/preceding-sibling::input] from list using JS
+2022-01-15 01:30:55  [ToDoStepDef] (main:) Step Definition ----- Added TaskBoot strap Vue JS applicationappears inCompletedTab
+2022-01-15 01:30:55  [LocatorActions] (main:) Capturing screenshot for When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:55  [LocatorActions] (main:) Captured screenshot name When_Task_Marked_completed_moves_to_Completed_Tab 
+2022-01-15 01:30:56  [LocatorActions] (main:) Capturing screenshot for When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:56  [LocatorActions] (main:) Captured screenshot name When_Task_Marked_completed_moves_to_Completed_Tab 
+2022-01-15 01:30:58  [LocatorActions] (main:) Capturing screenshot for When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:58  [LocatorActions] (main:) Captured screenshot name When_Task_Marked_completed_moves_to_Completed_Tab 
+2022-01-15 01:30:58  [LocatorActions] (main:) Capturing screenshot for When Task Marked completed moves to Completed Tab
+2022-01-15 01:30:58  [LocatorActions] (main:) Captured screenshot name When_Task_Marked_completed_moves_to_Completed_Tab 
+2022-01-15 01:30:58  [Hooks] (main:) -------Screen shot added-------
+2022-01-15 01:30:58  [DefaultTestContextBootstrapper] (main:) Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-15 01:30:58  [DefaultTestContextBootstrapper] (main:) Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2975a9e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@765ffb14, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57562473, org.springframework.test.context.event.EventPublishingTestExecutionListener@7a360554]
+2022-01-15 01:30:58  [ScenarioUtils] (main:) Set Scenario  With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:30:58  [Hooks] (main:) -------Session Started-------
+2022-01-15 01:30:58  [ToDoStepDef] (main:) Step Definition ----- User is Navigated to ToDo Page
+2022-01-15 01:30:58  [LocatorActions] (main:) ** Navigating to https://todomvc.com/examples/vue/***
+2022-01-15 01:30:59  [ToDoStepDef] (main:) Step Definition ----- User enters the taskCode Vue Js Applicationin ToDo Box
+2022-01-15 01:30:59  [ToDoStepDef] (main:) Step Definition ----- User enters the taskTest Vue JS Applicationin ToDo Box
+2022-01-15 01:30:59  [ToDoStepDef] (main:) Step Definition ----- Added TaskCode Vue Js Applicationappears inActiveTab
+2022-01-15 01:30:59  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:30:59  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:30:59  [ToDoStepDef] (main:) Step Definition ----- Added TaskTest Vue JS Applicationappears inActiveTab
+2022-01-15 01:31:00  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:00  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:00  [LocatorActions] (main:) Selecting option [[ChromeDriver: chrome on MAC (1db11034997d68ce993bf527ea322749)] -> xpath: //ul[@class='todo-list']/li//label[text()='Code Vue Js Application']/preceding-sibling::input] from list using JS
+2022-01-15 01:31:00  [ToDoStepDef] (main:) Step Definition ----- Added TaskCode Vue Js Applicationappears inCompletedTab
+2022-01-15 01:31:00  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:00  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:01  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:01  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:01  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:01  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:04  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:04  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:04  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Completed tasks are updated appropriately
+2022-01-15 01:31:04  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Completed_tasks_are_updated_appropriately 
+2022-01-15 01:31:04  [Hooks] (main:) -------Screen shot added-------
+2022-01-15 01:31:04  [DefaultTestContextBootstrapper] (main:) Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-15 01:31:04  [DefaultTestContextBootstrapper] (main:) Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24c685e7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7da635c0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ed9f6f8, org.springframework.test.context.event.EventPublishingTestExecutionListener@251c4280]
+2022-01-15 01:31:04  [ScenarioUtils] (main:) Set Scenario  With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:04  [Hooks] (main:) -------Session Started-------
+2022-01-15 01:31:04  [ToDoStepDef] (main:) Step Definition ----- User is Navigated to ToDo Page
+2022-01-15 01:31:04  [LocatorActions] (main:) ** Navigating to https://todomvc.com/examples/vue/***
+2022-01-15 01:31:04  [ToDoStepDef] (main:) Step Definition ----- User enters the taskCodein ToDo Box
+2022-01-15 01:31:04  [ToDoStepDef] (main:) Step Definition ----- User enters the taskTestin ToDo Box
+2022-01-15 01:31:04  [ToDoStepDef] (main:) Step Definition ----- Added TaskCodeappears inActiveTab
+2022-01-15 01:31:05  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:05  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:05  [ToDoStepDef] (main:) Step Definition ----- Added TaskTestappears inActiveTab
+2022-01-15 01:31:05  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:05  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:05  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:05  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:06  [ToDoStepDef] (main:) Step Definition ----- Added TaskCodeappears inCompletedTab
+2022-01-15 01:31:06  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:06  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:06  [ToDoStepDef] (main:) Step Definition ----- Added TaskTestappears inCompletedTab
+2022-01-15 01:31:06  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:06  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:07  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:07  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:07  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:07  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:09  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:09  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:10  [LocatorActions] (main:) Capturing screenshot for With more than a task added , Select all tasks to mark complete
+2022-01-15 01:31:10  [LocatorActions] (main:) Captured screenshot name With_more_than_a_task_added_,_Select_all_tasks_to_mark_complete 
+2022-01-15 01:31:10  [Hooks] (main:) -------Screen shot added-------
+2022-01-15 01:31:10  [DefaultTestContextBootstrapper] (main:) Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-01-15 01:31:10  [DefaultTestContextBootstrapper] (main:) Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@698d6d30, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@78065fcd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3407aa4f, org.springframework.test.context.event.EventPublishingTestExecutionListener@51ed2f68]
+2022-01-15 01:31:10  [ScenarioUtils] (main:) Set Scenario  User is able to clear more than one completed jobs
+2022-01-15 01:31:10  [Hooks] (main:) -------Session Started-------
+2022-01-15 01:31:10  [ToDoStepDef] (main:) Step Definition ----- User is Navigated to ToDo Page
+2022-01-15 01:31:10  [LocatorActions] (main:) ** Navigating to https://todomvc.com/examples/vue/***
+2022-01-15 01:31:10  [ToDoStepDef] (main:) Step Definition ----- User enters the taskCodein ToDo Box
+2022-01-15 01:31:10  [ToDoStepDef] (main:) Step Definition ----- User enters the taskTestin ToDo Box
+2022-01-15 01:31:11  [LocatorActions] (main:) Capturing screenshot for User is able to clear more than one completed jobs
+2022-01-15 01:31:11  [LocatorActions] (main:) Captured screenshot name User_is_able_to_clear_more_than_one_completed_jobs 
+2022-01-15 01:31:13  [LocatorActions] (main:) Capturing screenshot for User is able to clear more than one completed jobs
+2022-01-15 01:31:13  [LocatorActions] (main:) Captured screenshot name User_is_able_to_clear_more_than_one_completed_jobs 
+2022-01-15 01:31:13  [LocatorActions] (main:) Capturing screenshot for User is able to clear more than one completed jobs
+2022-01-15 01:31:13  [LocatorActions] (main:) Captured screenshot name User_is_able_to_clear_more_than_one_completed_jobs 
+2022-01-15 01:31:13  [Hooks] (main:) -------Screen shot added-------
