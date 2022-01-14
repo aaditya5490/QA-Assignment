@@ -27,5 +27,6 @@ public class RunWIPCukes {
     public static void tearDown() {
         BrowserLib.quitDriver();
         MasterthoughtReportsSvc.generateReport();
+    }
 
 }

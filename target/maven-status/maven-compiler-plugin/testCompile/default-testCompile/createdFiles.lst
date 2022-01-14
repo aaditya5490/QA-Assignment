@@ -1,0 +1,4 @@
+com/automation/VueJS/suite/RunWIPCukes.class
+com/automation/VueJS/stepdefs/Hooks.class
+com/automation/VueJS/stepdefs/CucumberSpringConfiguration.class
+com/automation/VueJS/stepdefs/ToDoStepDef.class
