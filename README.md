@@ -112,12 +112,13 @@ Spring concepts used for Annotations (V- 5.2.6.RELEASE)
   8.2 Functional tests -> mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
   
   8.3 Non Functional tests ->  mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Non_Functional_tests
-  
-9. Once Execution is over navigate to target folder for viewing output of executon 
 
-  9.1 Html Report -> Open target/cucumber-advanced-reports/cucumber-html-reports/overview-features.html created under Project Directory (if there a failure will be screenshot is taken placed in target/cucumber-advanced-reports/creenshots and embedded to html file mentioned earlier 
+# Reports 
+Once Execution is over navigate to target folder for viewing output of executon 
+
+  1 Html Report -> Open target/cucumber-advanced-reports/cucumber-html-reports/overview-features.html created under Project Directory (if there a failure will be screenshot is taken placed in target/cucumber-advanced-reports/creenshots and embedded to html file mentioned earlier 
   
-  9.2 Log -> Log will be created under target folder with Time Stamp of execution
+  2 Log -> Log will be created under target folder with Time Stamp of execution
 
 
 
