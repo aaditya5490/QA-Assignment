@@ -30,8 +30,11 @@ public class BrowserLib {
                 LOGGER.info("************Launching Chrome Browser**********");
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("headless");
+                chromeOptions.addArguments("--disable-infobars");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--remote-debugging-port=9222");
                 selectedDriver = new ChromeDriver(chromeOptions);
                 break;
             case "chrome-headless":
