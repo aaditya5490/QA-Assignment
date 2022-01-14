@@ -30,6 +30,8 @@ public class BrowserLib {
                 LOGGER.info("************Launching Chrome Browser**********");
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
                 selectedDriver = new ChromeDriver(chromeOptions);
                 break;
             case "chrome-headless":
