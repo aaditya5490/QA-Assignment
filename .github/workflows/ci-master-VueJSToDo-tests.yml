@@ -26,6 +26,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Install XVBF 
+        run: sudo apt-get install xvfb
+        
+      - name: Export Display
+        run: export DISPLAY=':99.0'
+        
+      - name: INitialize Xvbf
+        run: Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+      
       - name: Run tests
         run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
 
