@@ -39,7 +39,7 @@ jobs:
         run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Smoke_tests
 
       - name: Run Functional Regression tests
-          run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
+        run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
 
     #  - name: Collect & Upload Test Reports
     #    if: always()
