@@ -34,6 +34,25 @@ Feature: Verify ToDo Page
       |     Task                    |
       |Boot strap Vue JS application|
 
+  Scenario Outline: When User toggles Task between Complete and Incomplete appears appropriatly on  required Tab
+    Given User visit ToDo mvc Page
+    When User enters the task "<Task>" in ToDo Box
+    And Added Task "<Task>" appears in "Active" Tab
+    And User able to see total Items left as "1"
+    When User marks added task "<Task>" as complete
+    And User able to see total Items left as "0"
+    And Switch to "Completed" Tab
+    Then Added Task "<Task>" appears in "Completed" Tab
+    When User marks added task "<Task>" as incomplete
+    And User able to see total Items left as "1"
+    And Switch to "Active" Tab
+    And Added Task "<Task>" appears in "Active" Tab
+    And User Clears Added Task "<Task>"
+    Then ToDo List is Empty
+    Examples:
+      |     Task                    |
+      |Boot strap Vue JS application|
+
 
   Scenario Outline: With more than a task added , Completed tasks are updated appropriately
     Given User visit ToDo mvc Page

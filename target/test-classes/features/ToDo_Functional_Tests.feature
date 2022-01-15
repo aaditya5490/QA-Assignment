@@ -34,6 +34,27 @@ Feature: Verify ToDo Page
       |     Task                    |
       |Boot strap Vue JS application|
 
+  @Functional_testsWIP
+  Scenario Outline: When Task Marked completed moves to Completed Tab and later un marked move back to Active Tab
+    Given User visit ToDo mvc Page
+    When User enters the task "<Task>" in ToDo Box
+    And Added Task "<Task>" appears in "Active" Tab
+    And User able to see total Items left as "1"
+    When User marks added task "<Task>" as complete
+    And User able to see total Items left as "0"
+    #Then Added Task "<Task>" appears in "All" Tab
+    And Switch to "Completed" Tab
+    Then Added Task "<Task>" appears in "Completed" Tab
+    When User marks added task "<Task>" as incomplete
+    And User able to see total Items left as "1"
+    And Switch to "Active" Tab
+    And Added Task "<Task>" appears in "Active" Tab
+    And User Clears Added Task "<Task>"
+    Then ToDo List is Empty
+    Examples:
+      |     Task                    |
+      |Boot strap Vue JS application|
+
 
   Scenario Outline: With more than a task added , Completed tasks are updated appropriately
     Given User visit ToDo mvc Page
@@ -90,7 +111,6 @@ Feature: Verify ToDo Page
     Then User Refresh Page
     And Added Task "Code" appears in "Active" Tab
 
-  @Functional_testsWIP
   Scenario: New Tab opens with existing list
     Given User visit ToDo mvc Page
     When User enters the task "Code" in ToDo Box

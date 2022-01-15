@@ -73,7 +73,7 @@ public class ToDoPage {
         locatorActions.takeScreenshot("After First test case task clear");
     }
 
-    public void makeTaskComplete(String string)  {
+    public void ToggleComplete(String string)  {
         System.out.println("Xpath of the element ----"+ env.getProperty("list.todo")+"/li//label[text()='"+string+"']/preceding-sibling::input");
         By by = locatorActions.constructByObjectFromExpression(env.getProperty("list.todo")+"/li//label[text()='"+string+"']/preceding-sibling::input");
         WebElement element = locatorActions.findElement(by);

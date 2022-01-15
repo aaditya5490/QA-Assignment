@@ -52,6 +52,10 @@ public class ToDoStepDef implements En {
             toDoSteps.markTaskComplete(string);
         });
 
+        When("User marks added task {string} as incomplete", (String string) -> {
+            toDoSteps.markTaskIncomplete(string);
+        });
+
         When("User does Select All task in the list to mark complete", () -> {
             toDoSteps.markAllTaskComplete();
         });

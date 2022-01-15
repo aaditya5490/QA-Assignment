@@ -42,7 +42,11 @@ public class ToDoSteps {
     }
 
     public void markTaskComplete(String string) {
-        toDoPage.makeTaskComplete(string);
+        toDoPage.ToggleComplete(string);
+    }
+
+    public void markTaskIncomplete(String string) {
+        toDoPage.ToggleComplete(string);
     }
 
     public void markAllTaskComplete() {
