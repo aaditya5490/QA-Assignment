@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Smoke_tests", ] ,
+        labels:  [ "@Functional_tests",  "@Functional_testsWIP", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00, ] 
+                data:  [ 100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ] 
+                data:  [ 0.00,  0.00, ] 
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AFN Automation</td>
         <td>1.0</td>
-      <td>16 Jan 2022, 03:40</td>
+      <td>16 Jan 2022, 04:03</td>
     </tr>
   </tbody>
 </table>
@@ -197,20 +197,37 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-tag_4062341872.html">@Smoke_tests</a></td>
+        <td class="tagname"><a href="report-tag_960991556.html">@Functional_tests</a></td>
 
-        <td      class="passed"    >5</td>
+        <td      class="passed"    >4</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">4</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="23186000000">23.186</td>
+        <td class="duration" data-value="2989000000">2.989</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2942532696.html">@Functional_testsWIP</a></td>
+
+        <td      class="passed"    >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2989000000">2.989</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -218,19 +235,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>5</td>
+      <td>8</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
+      <td>8</td>
 
-      <td>1</td>
+      <td>2</td>
       <td>0</td>
-      <td>1</td>
+      <td>2</td>
 
-      <td class="duration">23.186</td>
-      <td>1</td>
+      <td class="duration">5.978</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>

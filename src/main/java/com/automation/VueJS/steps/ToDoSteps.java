@@ -65,4 +65,8 @@ public class ToDoSteps {
     public void validateHomePageComponents() {
         toDoPage.validateHomePageComponents();
     }
+
+    public void RefreshPage() {
+        toDoPage.userRefreshPage();
+    }
 }

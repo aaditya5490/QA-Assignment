@@ -172,4 +172,9 @@ public class ToDoPage {
 
 
     }
+
+    public void userRefreshPage() {
+        locatorActions.refreshPage();
+
+    }
 }

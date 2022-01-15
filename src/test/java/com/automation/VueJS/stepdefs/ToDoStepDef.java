@@ -68,5 +68,9 @@ public class ToDoStepDef implements En {
             toDoSteps.checklist();
         });
 
+        Then("User Refresh Page", () -> {
+            toDoSteps.RefreshPage();
+        });
+
     }
 }

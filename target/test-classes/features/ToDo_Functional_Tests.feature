@@ -84,4 +84,11 @@ Feature: Verify ToDo Page
       | Task1 |Task2|
       | Code  | Test |
 
+  @Functional_testsWIP
+    Scenario: On Refresh of Page , To Do List remnains same
+      Given User visit ToDo mvc Page
+      When User enters the task "Code" in ToDo Box
+      Then User Refresh Page
+      And Added Task "Code" appears in "Active" Tab
+
 
