@@ -14,6 +14,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -221,6 +225,37 @@ public class LocatorActions {
         } finally {
             return flag;
         }
+    }
+
+    public boolean verifyBrokenLink(String url) {
+        boolean flag = false;
+        try {
+            HttpURLConnection huc = (HttpURLConnection) (new URL(url).openConnection());
+            huc.setRequestMethod("HEAD");
+            huc.connect();
+            int respCode = huc.getResponseCode();
+            LOGGER.info("Response code {}", respCode);
+            if (respCode >= 400) {
+                flag = false;
+                LOGGER.info("Link is a broken {} ", url);
+            } else {
+                flag = true;
+                LOGGER.info("Link is a valid {} ", url);
+            }
+        } catch (MalformedURLException e) {
+            LOGGER.error("MalformedURLException", e);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
+    public String getAttribute(final By by, final String attribute) {
+        WebElement element = findElement(by);
+        if (element != null) {
+            return element.getAttribute(attribute);
+        }
+        return "";
     }
 
     public boolean sendKeys(WebElement element, String textToEnter) {

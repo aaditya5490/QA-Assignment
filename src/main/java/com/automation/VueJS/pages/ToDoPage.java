@@ -112,6 +112,64 @@ public class ToDoPage {
     }
 
     public void validateHomePageComponents() {
+        By by = null ;
+        boolean flag = false;
+        String url = "";
+                by  = locatorActions.constructByObjectFromExpression(env.getProperty("label.headertext"));
+        locatorActions.verifyElementIsVisible(by);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("textbox.todo"));
+        locatorActions.verifyElementIsVisible(by);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("section.footer"));
+        locatorActions.verifyElementIsVisible(by);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("section.footer"));
+        locatorActions.verifyElementIsVisible(by);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_source"));
+         url = locatorActions.getAttribute(by, "href");
+         flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_Documenrtation"));
+         url = locatorActions.getAttribute(by, "href");
+         flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_APIRef"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_VueJSGithub"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_Examples"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_CommunityTwitter"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_Gitter"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+        by  = locatorActions.constructByObjectFromExpression(env.getProperty("lnk_GithubDiscusins"));
+        url = locatorActions.getAttribute(by, "href");
+        flag = locatorActions.verifyBrokenLink(url);
+        Assert.assertTrue(flag);
+
+
+
+
 
     }
 }
