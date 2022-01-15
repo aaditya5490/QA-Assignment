@@ -1,6 +1,6 @@
 @Smoke_tests
-Feature: To Do Functional Tests
-  As a user , I should see follow us links on af site
+Feature: To Do Smoke Tests
+  As a user , When I navighate to ToDo Home Page , I should be able to see Home Page components loaded and able to add/delete task on the list
 
   @Smoke_tests
   Scenario: Verify To Do Page Navigation
