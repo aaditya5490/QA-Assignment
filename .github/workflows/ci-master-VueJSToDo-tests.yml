@@ -35,8 +35,11 @@ jobs:
       - name: INitialize Xvbf
         run: Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
       
-      - name: Run tests
-        run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
+      - name: Run Smoke tests
+        run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Smoke_tests
+
+      - name: Run Functional Regression tests
+          run: mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
 
     #  - name: Collect & Upload Test Reports
     #    if: always()
