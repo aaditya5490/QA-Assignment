@@ -177,4 +177,9 @@ public class ToDoPage {
         locatorActions.refreshPage();
 
     }
+
+    public void usrOpenNewTab() {
+        locatorActions.openNewTab();
+        locatorActions.navigateUrl(ConfigDetails.getAutUrl());
+    }
 }

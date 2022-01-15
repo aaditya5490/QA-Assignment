@@ -90,5 +90,11 @@ Feature: Verify ToDo Page
     Then User Refresh Page
     And Added Task "Code" appears in "Active" Tab
 
+  Scenario: New Tab opens with existing list
+    Given User visit ToDo mvc Page
+    When User enters the task "Code" in ToDo Box
+    And Added Task "Code" appears in "Active" Tab
+    When User opens new Tab
+    And Added Task "Code" appears in "Active" Tab
 
 

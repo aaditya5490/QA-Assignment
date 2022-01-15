@@ -72,5 +72,9 @@ public class ToDoStepDef implements En {
             toDoSteps.RefreshPage();
         });
 
+        When("User opens new Tab", () -> {
+            toDoSteps.openNewTab();
+        });
+
     }
 }

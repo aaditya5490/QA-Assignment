@@ -69,4 +69,8 @@ public class ToDoSteps {
     public void RefreshPage() {
         toDoPage.userRefreshPage();
     }
+
+    public void openNewTab() {
+        toDoPage.usrOpenNewTab();
+    }
 }

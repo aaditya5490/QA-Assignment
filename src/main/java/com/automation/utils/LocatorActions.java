@@ -464,6 +464,28 @@ public class LocatorActions {
         return waitTillPageIsOpened(40);
     }
 
+
+    public List<String> getTabs() {
+        ArrayList<String> tabs = new ArrayList<String>(getDriver().getWindowHandles());
+        return tabs;
+    }
+
+    public void switchToTab(String tab) {
+        getDriver().switchTo().window(tab);
+    }
+
+    public void closeTab(String tab) {
+        switchToTab(tab);
+        getDriver().close();
+    }
+
+    public void openNewTab()
+    {
+        ((JavascriptExecutor) driver).executeScript("window.open()");
+        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+
 }
 
 
