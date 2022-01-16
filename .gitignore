@@ -1,2 +1,5 @@
-*/.idea/**
+### IntelliJ IDEA ###
+.idea
+###maven#####
+/target/
 */target/**
