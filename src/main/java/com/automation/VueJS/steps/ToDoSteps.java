@@ -50,8 +50,13 @@ public class ToDoSteps {
     }
 
     public void markAllTaskComplete() {
-        toDoPage.makeAllTaskComplete();
+        toDoPage.toggleAllTaskComplete();
     }
+
+    public void markAllTaskInComplete() {
+        toDoPage.toggleAllTaskComplete();
+    }
+
 
     public void switchtoCompleteTab(String string) {
         toDoPage.switchTabs(string);

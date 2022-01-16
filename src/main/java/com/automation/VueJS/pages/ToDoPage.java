@@ -80,7 +80,7 @@ public class ToDoPage {
         locatorActions.clickOnElementByJS(element);
     }
 
-    public void makeAllTaskComplete() {
+    public void toggleAllTaskComplete() {
         By by = locatorActions.constructByObjectFromExpression(env.getProperty("checkbox.toggleall"));
         locatorActions.clickIfVisible(by);
         locatorActions.takeScreenshot("After cleared task");

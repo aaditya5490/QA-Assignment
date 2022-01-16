@@ -57,6 +57,10 @@ public class ToDoStepDef implements En {
         });
 
         When("User does Select All task in the list to mark complete", () -> {
+            toDoSteps.markAllTaskInComplete();
+        });
+
+        When("User does Select All task in the list to mark Incomplete", () -> {
             toDoSteps.markAllTaskComplete();
         });
 
