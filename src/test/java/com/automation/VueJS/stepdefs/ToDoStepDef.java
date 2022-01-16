@@ -29,13 +29,19 @@ public class ToDoStepDef implements En {
             toDoSteps.validateHomePageComponents();
         });
 
-        When("User enters the task {string} in ToDo Box", (String string) -> {
+        When("User adds {string} in ToDo Box", (String string) -> {
             LOGGER.info("Step Definition ----- User enters the task" + string + "in ToDo Box");
             toDoSteps.UserEnterTask(string);
 
         });
 
-        When("Added Task {string} appears in {string} Tab", (String string, String string2) -> {
+        When("User adds and copies {string} in ToDo Box", (String string) -> {
+            LOGGER.info("Step Definition ----- User enters the task" + string + "in ToDo Box");
+            toDoSteps.UserEntersandCopiesTask(string);
+
+        });
+
+        When("added Task {string} appears in {string} Tab", (String string, String string2) -> {
             LOGGER.info("Step Definition ----- Added Task" + string + "appears in"+ string2 + "Tab");
             toDoSteps.validateTaskinTab(string,string2);
         });
@@ -74,6 +80,10 @@ public class ToDoStepDef implements En {
 
         Then("ToDo List is Empty", () -> {
             toDoSteps.checklist();
+        });
+
+        Then("closes new Tab", () -> {
+            toDoSteps.closeTab();
         });
 
         Then("User Refresh Page", () -> {

@@ -28,6 +28,9 @@ public class ToDoSteps {
         toDoPage.user_enter_task(string);
 
     }
+    public void UserEntersandCopiesTask(String string) throws InterruptedException {
+        toDoPage.user_enter_task_and_copies(string);
+    }
 
     public void validateTaskinTab(String string, String string2) {
         toDoPage.validate_entered_task_appears_in_tab(string,string2);
@@ -81,5 +84,10 @@ public class ToDoSteps {
 
     public void openNewTab() {
         toDoPage.usrOpenNewTab();
+    }
+
+
+    public void closeTab() {
+        toDoPage.closeCurrentTab();
     }
 }

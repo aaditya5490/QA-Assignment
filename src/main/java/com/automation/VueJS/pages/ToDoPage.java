@@ -4,13 +4,18 @@ import com.automation.config.ConfigDetails;
 import com.automation.utils.LocatorActions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 @PropertySource("classpath:locators/ToDo_page.properties")
@@ -181,5 +186,30 @@ public class ToDoPage {
     public void usrOpenNewTab() {
         locatorActions.openNewTab();
         locatorActions.navigateUrl(ConfigDetails.getAutUrl());
+    }
+
+    public void user_enter_task_and_copies(String task) throws InterruptedException {
+        System.out.println("************user_enter_task_and_copies*******");
+        By by = locatorActions.constructByObjectFromExpression(env.getProperty("textbox.todo"));
+        WebElement ele = locatorActions.findElement(by);
+        ele.sendKeys(task);
+        Actions builder = new Actions((locatorActions.getDriver()));
+        builder.keyDown( Keys.CONTROL ).sendKeys( "a" ).keyUp( Keys.CONTROL ).build().perform();
+        Thread.sleep(2000);
+        builder.keyDown( Keys.CONTROL ).sendKeys( "c" ).keyUp( Keys.CONTROL ).build().perform();
+        Thread.sleep(2000);
+        builder.keyDown( Keys.CONTROL ).sendKeys( "v" ).keyUp( Keys.CONTROL ).build().perform();
+        Thread.sleep(2000);
+        locatorActions.PressEnterKey(by);
+        by = locatorActions.constructByObjectFromExpression(env.getProperty("list.todoview"));
+        locatorActions.verifyElementIsVisible(by);
+    }
+
+    public void closeCurrentTab() {
+        List<String> ls = locatorActions.getTabs();
+        locatorActions.closeTab(ls.get(1));
+        locatorActions.switchToTab(ls.get(0));
+        locatorActions.setImplicitWaitTimeOutSeconds(2);
+
     }
 }

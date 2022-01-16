@@ -288,6 +288,22 @@ public class LocatorActions {
         element.sendKeys(Keys.ENTER);
     }
 
+    public void CopyText(By by) {
+        WebElement element = findElement(by);
+        element.sendKeys(Keys.chord(Keys.CONTROL,"A"));
+        element.sendKeys(Keys.chord(Keys.CONTROL,"C"));
+    }
+
+    public void ClearText(By by) {
+        WebElement element = findElement(by);
+        element.sendKeys(Keys.chord(Keys.BACK_SPACE));
+    }
+
+    public void PasteText(By by) {
+        WebElement element = findElement(by);
+        element.sendKeys(Keys.chord(Keys.CONTROL,"V"));
+    }
+
     public boolean verifyElementIsVisible(WebElement element) {
         boolean flag = true;
         try {
