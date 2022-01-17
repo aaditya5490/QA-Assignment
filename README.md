@@ -110,8 +110,6 @@ Spring concepts used for Annotations (V- 5.2.6.RELEASE)
   8.1  Smoke tests -> mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Smoke_tests
   
   8.2 Functional tests -> mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
-  
-  8.3 Non Functional tests ->  mvn clean verify -Dbrowser=chrome -Denv=preprod -Dcucumber.filter.tags=@Non_Functional_tests
 
 # Reports 
 Once Execution is over navigate to target folder for viewing output of executon 
