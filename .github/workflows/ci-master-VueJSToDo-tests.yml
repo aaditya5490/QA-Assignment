@@ -48,7 +48,3 @@ jobs:
         with:
           name: test_reports
           path: ./target/cucumber-advanced-reports/cucumber-html-reports
-      # - name: Email Test Reports
-      #   if: always()
-      #   run: |
-      #     bash ./sendmail.sh -s "UI Test Report" -f ssannidhi@palo-it.com -r ssannidhi@palo-it.com -b "UI Test Report" -a ./target/cucumber-ExtendedReports/report.html
