@@ -37,10 +37,10 @@ jobs:
         run: Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
       
       - name: Run Smoke tests
-        run: mvn clean verify -Dbrowser=chrome-headless -Denv=preprod -Dcucumber.filter.tags=@Smoke_tests
+        run: mvn clean verify -Dbrowser=chrome-headless -Denv=prod -Dcucumber.filter.tags=@Smoke_tests
 
       - name: Run Functional Regression tests
-        run: mvn clean verify -Dbrowser=chrome-headless -Denv=preprod -Dcucumber.filter.tags=@Functional_tests
+        run: mvn clean verify -Dbrowser=chrome-headless -Denv=prod -Dcucumber.filter.tags=@Functional_tests
 
       - name: Collect & Upload Test Reports
         if: always()
